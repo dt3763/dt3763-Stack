@@ -1,4 +1,7 @@
+import java.util.ArrayDeque;
 import java.util.Deque;
+
+
 /**
  * Stacks are LIFO - last in, first out, like a stack of plates or books, or the puzzle game "Towers of Hanoi".
  * They are used in algorithms where it is needed to keep track of the ordering in which the elements were inserted.
@@ -16,11 +19,15 @@ public class Lab {
      * of a Stack. This challenge will not be using the Stack class, because the Stack class is known to have a shoddy
      * implementation as it hasn't been changed since the very earliest version of Java. Deques were made to exhibit
      * the exact same behavior and are generally better.
+     * @return 
      *
      * @return a newly instantiated Deque. Deques implement both stack and queue behavior.
      */
     public Deque<String> createNewStack(){
-        return null;
+
+        Deque<String> stack = new ArrayDeque<>();
+           return stack;
+        
     }
 
     /**
@@ -28,7 +35,8 @@ public class Lab {
      * @return the number of elements in the deque.
      */
     public int getSize(Deque<String> stack){
-        return 0;
+        Deque<String> deque = new ArrayDeque<>();
+        return deque.size();
     }
 
     /**
@@ -37,8 +45,16 @@ public class Lab {
      * @param stack A Deque of Strings.
      * @param item a String to be added to the deque.
      */
-    public void addToTopOfStack(Deque<String> stack, String item){
-    }
+    public class Example {
+        public void main(String[] args) {
+            Deque<String> myStack = new ArrayDeque<>();
+            addToTopOfStack(myStack, "One");
+            addToTopOfStack(myStack, "Two");
+            addToTopOfStack(myStack, "Three");
+            System.out.println(myStack);
+        }
+    
+        
 
     /**
      * Pop the value from the top of the deque and return that value.
@@ -46,8 +62,19 @@ public class Lab {
      * @param stack A Deque of Strings.
      * @return the value popped from the top of the deque.
      */
-    public String removeFromTopOfStack(Deque<String> stack){
-        return "";
+  
+public class getSize {
+    public void main(String[] args) {
+        Deque<String> myStack = new ArrayDeque<>();
+        addToTopOfStack(myStack, "One");
+        addToTopOfStack(myStack, "Two");
+        addToTopOfStack(myStack, "Three");
+        System.out.println(myStack);
+    }
+
+    public void addToTopOfStack(Deque<String> stack, String item) {
+        
+        stack.push(item);
     }
     /**
      * Peek the value at the top of a deque.
@@ -57,6 +84,38 @@ public class Lab {
      * @return the value peeked from the top of the deque.
      */
     public String getTopOfStackWithoutRemoving(Deque<String> stack){
-        return "";
+        Deque<String> de_que = new ArrayDeque<>();
+        return de_que.peek();
+    }
+
+    @Override
+    public String toString() {
+        Deque<String> de_que = new ArrayDeque<>();
+        return de_que.toString();
     }
 }
+
+    
+
+    public String removeFromTopOfStack(Deque<String> stack) {
+        return null;
+    }
+
+    
+
+}
+
+    public void addToTopOfStack(Deque<String> myStack, String string) {
+    }
+
+	public String removeFromTopOfStack(Deque<String> myStack) {
+        return null;
+	}
+
+    public String getTopOfStackWithoutRemoving(Deque<String> stack) {
+        return null;
+    }
+
+   
+    
+    }
